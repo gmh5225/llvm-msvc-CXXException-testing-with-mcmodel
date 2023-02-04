@@ -1,8 +1,10 @@
 # Reference: https://build-cpp.github.io/cmkr/cmake-toml
 [project]
-name = "cmkr_for_beginners"
-description = "A minimal cmkr project."
+name = "llvm-msvc-seh-testing-with-mcmodel"
+cmake-after = """
+set(CMAKE_CXX_FLAGS "-Xclang -mcmodel=large -Xclang -fno-jump-tables")
+"""
 
-[target.hello_world]
+[target.with_mcmodel]
 type = "executable"
 sources = ["src/main.cpp"]

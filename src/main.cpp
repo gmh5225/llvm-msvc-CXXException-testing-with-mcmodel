@@ -1,7 +1,12 @@
 #include <iostream>
 
-int main()
-{
+int main() {
+
+  try {
     std::cout << "Hello from cmkr!\n";
-    return 0;
+  } catch (...) {
+    std::cout << "CXX Exception with mcmodel\n";
+  }
+
+  return 0;
 }

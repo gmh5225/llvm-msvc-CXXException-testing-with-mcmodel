@@ -24,7 +24,7 @@ if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
 	configure_file(cmake.toml cmake.toml COPYONLY)
 endif()
 
-project(llvm-msvc-seh-testing-with-mcmodel)
+project(proj)
 
 set(CMAKE_CXX_FLAGS "-Xclang -mcmodel=large -Xclang -fno-jump-tables")
 
